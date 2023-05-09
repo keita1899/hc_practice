@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zennの2種類の執筆方法について</title>
+    <script src="https://kit.fontawesome.com/3274c4aa8a.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="https://zenn.dev/images/logo-transparent.png">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__column">
+                <h1 class="header__logo">
+                    <a href="" class="header__logo__link">
+                        <svg x="0px" y="0px" viewBox="0 0 377.4 88.3" style="enable-background:new 0 0 377.4 88.3" xml:space="preserve"
+                            height="22" aria-label="Zenn | エンジニアのための情報共有コミュニティ">
+                            <title>Zenn</title>
+                            <g fill="#111">
+                                <path
+                                    d="M233,56.8h-39c0.5,3.5,2.2,6.8,4.8,9.2c2.7,2.3,6.2,3.5,9.8,3.4c2.8,0,5.6-0.5,8.2-1.7c2.5-1.1,4.8-2.8,6.5-5l8.2,9.5 c-2.5,3.4-5.7,6.1-9.5,7.9c-4.6,2.2-9.6,3.3-14.7,3.2c-5.7,0.1-11.4-1.2-16.5-4c-4.5-2.5-8.2-6.3-10.7-10.9s-3.8-9.8-3.7-15.1v-2.2 c-0.1-5.7,1.1-11.3,3.5-16.5c2.2-4.7,5.7-8.6,10.1-11.3c4.7-2.8,10.1-4.2,15.5-4.1c5.2-0.1,10.3,1.1,14.9,3.7 c4.1,2.5,7.4,6.2,9.4,10.5c2.2,5.1,3.3,10.5,3.2,16.1V56.8z M216.1,43.9c0.1-2.9-0.9-5.7-2.8-7.9c-1.8-1.9-4.4-2.9-7.9-2.9 c-2.9-0.1-5.8,1.1-7.7,3.2c-2,2.6-3.3,5.7-3.6,9h22V43.9z">
+                                </path>
+                                <path d="M128.3,67.9h36.1v14.7h-56.9V72l35.8-54.3h-36.2V2.9h56.6v10.4L128.3,67.9z"></path>
+                                <path
+                                    d="M248.8,50.7c0-19.1,12.7-29.2,28.2-29.2s27.9,10.1,27.9,29.2V82h-16V51.4c0-10.6-4.8-16.1-12-16.1s-12.4,5.5-12.4,16.1 v30.7h-15.8L248.8,50.7L248.8,50.7z">
+                                </path>
+                                <path
+                                    d="M320.3,50.7c0-19.1,12.7-29.2,28.2-29.2s27.9,10.1,27.9,29.2V82h-16V51.4c0-10.6-4.8-16.1-12-16.1S336,40.8,336,51.4v30.7 h-15.8L320.3,50.7L320.3,50.7z">
+                                </path>
+                            </g>
+                            <path fill="#3EA8FF" class="st0"
+                                d="M2.4,83.3h17c0.9,0,1.7-0.5,2.2-1.2L68.4,5.2C69,4.2,68.3,3,67.1,3H51c-0.8,0-1.5,0.4-1.9,1.1L1.6,81.9 C1.3,82.5,1.7,83.3,2.4,83.3z">
+                            </path>
+                            <path fill="#3EA8FF" class="st0"
+                                d="M61,82.1l22.1-35.5c0.7-1.1-0.1-2.5-1.4-2.5H65.7c-0.6,0-1.2,0.3-1.5,0.8L41.5,81.2c-0.6,0.9,0.1,2.1,1.2,2.1 h16.3C59.8,83.3,60.6,82.9,61,82.1z">
+                            </path>
+                        </svg>
+                    </a>
+                </h1>
+            </div>
+            <div class="header__column">
+                <button class="btn btn-search "><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button class="btn btn-login header__btn-login">Log in</button>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main">
+        <div class="sticky-content sticky-content--mobile-menu">
+            <div class="mobile-menu">
+                <div class="mobile-menu__container">
+                    <div class="mobile-menu__account">
+                        <img class="mobile-menu__account__img" src="images/9965dabc76.jpeg" alt="Zenn公式画像">
+                        <span class="mobile-menu__account__name">Zenn公式</span>
+                    </div>
+                    <div class="mobile-menu__btns">
+                        <div class="btn btn-index">目次</div>
+                        <button class="btn btn-like mobile-menu__btn-like"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="heading">
+            <div class="heading__container">
+                <p class="heading__emoji">📝</p>
+                <h1 class="heading__title">Zennの2種類の執筆方法について</h1>
+                <p class="heading__info">2020/09/06に公開・約1,200字</p>
+            </div>
+        </div>
+
+
+        <div class="wrapper">
+            <div class="position-absolute position-absolute--button-area">
+                <div class="sticky-content sticky-content--button-area">
+                    <div class="button-area">
+                        <div class="like">
+                            <button class="btn-like btn-like--secondary like__btn-like">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                            <p class="like-count">78</p>
+                        </div>
+                        <div class="tweet">
+                            <button class="btn-tweet--secondary">
+                                <i class="fa-brands fa-twitter"></i>
+                                <p class="btn-tweet__text">ツイート</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <main class="content">
+                <article class="article">
+                    <div class="article__container">
+                        <div class="article__body">
+                            <section class="article__section">
+                                <div class="tags">
+                                    <a href="" class="tag">
+                                        <img class="tag__icon" src="images/b52eac9e48.png" alt="タグアイコン">
+                                        <span class="tag__name">Zenn</span>
+                                    </a>
+                                    <a href="" class="tag">
+                                        <img class="tag__icon" src="images/tech-icon.svg" alt="タグアイコン">
+                                        <span class="tag__name">Tech</span>
+                                    </a>
+                                </div>
+                                <p class="article__text">このページではZennで記事や本を作成するときの執筆環境について紹介します。</p>
+                            </section>
+                            <section class="article__section">
+                                <h2 class="article__secondary-title">
+                                    Zenn の執筆方法は 2 種類
+                                </h2>
+                                <p class="article__text">Zennのコンテンツは次のいずれかの方法で作成します。</p>
+                            </section>
+                            <section class="article__section">
+                                <h3 class="article__tertiary-title">
+                                    1. Webエディター
+                                </h3>
+                                <div>
+                                    <img src="images/tb04ri7f5v9mdccsehi5jppvfpm3.png" alt="" class="article__img">
+                                </div>
+                                <p class="article__text">ブラウザ上で動くエディターです。Zennにログインした状態で使用します。</p>
+                                <div class="article_dropdown-menu">
+                                    <p class="article__dropdown-menu__toggle">ショートカットを使用しよう</p>
+                                    <div class="article__dropdown-menu__content"></div>
+                                </div>
+                            </section>
+                            <section class="article__section border">
+                                <h3 class="article__tertiary-title">
+                                    2. ローカルのテキストエディター + CLI
+                                </h3>
+                                <div>
+                                    <img src="images/n0tufad6ruthuy0j2hxhffg87hpz.png" alt="" class="article__img">
+                                </div>
+                                <div>
+                                    <img src="images/ve1rve2rb3yvvcat974fxt2rftc1.png" alt="" class="article__img">
+                                </div>
+                                <p class="article__text">自分の好きな環境で執筆したい方は<strong>GitHub リポジトリとの連携機能</strong>を利用することをおすすめします。リポジトリ連携をすると、特定のブランチに変更があったときに自動でコンテンツがzenn.devに反映されるようになります。</p>
+                                <p class="article__text">
+                                    <span class="article__emoji">📘</span>
+                                    <a href="" class="article__link">
+                                        Zenn と GitHub リポジトリを連携する →
+                                    </a>
+                                </p>
+                                <p class="article__text">リポジトリ連携時には、ローカルでmarkdownファイルを作成し、好きなテキストエディターで編集を行います。Zenn CLIを使うことでブラウザでプレビューしながら執筆することが可能になります。</p>
+                                <p class="article__text">
+                                    <span class="article__emoji">📘</span>
+                                    <a href="" class="article__link">
+                                        Zenn CLI を導入する →
+                                    </a>
+                                </p>
+                            </section>
+                            <section class="article__section">
+                                <p class="article__text">オンラインエディターを使う場合も、CLIを使う場合もmarkdownの書き方は変わりません。具体的な記法は下記のリンク先をご覧ください。</p>
+                                <p class="article__text">
+                                    <span class="article__emoji">📘</span>
+                                    <a href="" class="article__link">
+                                        Zenn のmarkdown記法 →
+                                    </a>
+                                </p>
+                                <p class="article__text">
+                                    <a href="" class="article__github-link"><i class="fa-brands fa-github"></i>GitHubで編集を提案</a>
+                                </p>
+                            </section>
+                        </div>
+                        <div class="article__foot">
+                            <div class="btn_container">
+                                <div class="like">
+                                    <button class="btn-like article__btn-like"><i class="fa-regular fa-heart"></i></button>
+                                    <span class="like_count">77</span>
+                                </div>
+                                <div class="btn-box">
+                                    <button class="toggle">
+                                    </button>
+                                    <div class="btn-tweet">
+                                        <button>
+                                            <i class="fa-brands fa-twitter icon"></i>
+                                            <span class="btn-tweet_text">ツイート</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="author">
+                            <div>
+                                <img src="images/9965dabc76.jpeg" alt="Zenn公式画像" class="author__img">
+                            </div>
+                            <div class="author__info">
+                                <h3 class="author__name">Zenn公式</h3>
+                                <p class="author__description">Zennの使い方や開発状況を発信する公式アカウントです。</p>
+                                <div class="author__btns">
+                                    <button class="btn-follow">フォロー</button>
+                                    <button class="icon icon-github"><i class="fa-brands fa-github"></i></button>
+                                    <button  class="icon icon-tweet"><i class="fa-brands fa-twitter"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+        
+                <section class="section discussion">
+                    <div class="discussion__head">
+                        <h2 class="section__title discussion__title">Discussion</h2>
+                        <div>
+                            <img class="discussion__img" src="images/discussion.png">
+                        </div>
+                    </div>
+                    <div class="discussion__foot">
+                        <p class="discussion__text">ログインするとコメントできます</p>
+                        <button class="btn-login discussion__btn-login">Login</button>
+                    </div>
+                </section>
+            </main>
+            
+            <aside class="sidebar">
+                <div class="sidebar__inner">
+                    <div class="sidebar__content">
+                        <ul class="info">
+                            <li class="info__item">
+                                <div class="info__item__title">
+                                    <svg viewBox="0 0 1024 1024" height="15" width="15">
+                                        <path fill="currentColor"
+                                            d="M964.37,981.87A457.62,457.62,0,0,0,692,573.72,302.25,302.25,0,0,0,810.57,333.38,303,303,0,1,0,238.86,473.45a305.91,305.91,0,0,0,84.32,100.38A458.88,458.88,0,0,0,86.65,814.09,449.62,449.62,0,0,0,50.8,981.85a14.64,14.64,0,0,0,14.25,15h72.46a14.51,14.51,0,0,0,14.61-14.24,355.59,355.59,0,0,1,710.93,0,14.52,14.52,0,0,0,14.62,14.26h72.09a14.63,14.63,0,0,0,14.62-14.61ZM709.25,333.38a201.76,201.76,0,1,1-59.09-142.57A200.3,200.3,0,0,1,709.25,333.38Z">
+                                        </path>
+                                    </svg>
+                                    著者
+                                </div>
+                                <a href="" class="info__link">
+                                    <img src="images/9965dabc76.jpeg" alt="" class="info__author__img">
+                                    Zenn公式
+                                </a>
+                            </li>
+                            <li class="info__item">
+                                <div class="info__item__title">
+                                    <svg x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" height="14" width="14">
+                                        <path fill="currentColor"
+                                            d="M18.2,0.7c-0.8,0-1.4,0.5-1.4,1.3v3.1c0,0.7,0.7,1.3,1.4,1.3c0.7,0,1.4-0.5,1.4-1.3V2 C19.6,1.3,18.9,0.7,18.2,0.7z">
+                                        </path>
+                                        <path fill="currentColor"
+                                            d="M5.8,0.7C5,0.7,4.4,1.3,4.4,2v3.1c0,0.7,0.7,1.3,1.4,1.3s1.4-0.5,1.4-1.3V2C7.3,1.3,6.6,0.7,5.8,0.7z"></path>
+                                        <path fill="currentColor"
+                                            d="M21.7,3.6H2.3c-1.1,0-2,0.9-2,2v15.7c0,1.1,0.9,2,2,2h19.4c1.1,0,2-0.9,2-2V5.5C23.6,4.5,22.8,3.6,21.7,3.6z  M21.4,19.8c0,0.6-0.5,1.1-1.1,1.1H3.4c-0.5,0-0.9-0.4-0.9-0.9V9.7h19V19.8z">
+                                        </path>
+                                    </svg>
+                                    公開
+                                </div>
+                                <div class="info__detail">2020/09/06</div>
+                            </li>
+                            <li class="info__item">
+                                <div class="info__item__title">
+                                    <svg x="0px" y="0px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" height="15" width="15">
+                                        <g fill="currentColor">
+                                            <path
+                                                d="M2.9,10H8c0.2,0,0.4-0.1,0.6-0.3c0.3-0.3,0.3-0.7,0-1.1l-2.2-2c1.5-1.5,3.5-2.3,5.6-2.3c4,0,7.2,2.9,7.7,6.8 c0.1,0.7,0.7,1.1,1.4,1.1l0.1,0c0.8-0.1,1.2-0.8,1.1-1.5c-0.5-5.2-5-9.1-10.3-9.1c-2.8,0-5.5,1.1-7.4,3.1L2.8,2.9 c-0.3-0.3-0.7-0.3-1.1,0C1.5,3.1,1.5,3.3,1.5,3.5v5.1C1.5,9.3,2.1,10,2.9,10z">
+                                            </path>
+                                            <path
+                                                d="M21.1,14H16c-0.2,0-0.4,0.1-0.6,0.3c-0.3,0.3-0.3,0.7,0,1.1l2.1,2.1c-1.5,1.5-3.5,2.3-5.6,2.3c-4,0-7.2-2.9-7.7-6.9 c-0.2-0.7-0.9-1.3-1.6-1.2c-0.8,0.1-1.2,0.8-1.1,1.5c0.5,5.2,5,9.1,10.3,9.1c2.8,0,5.5-1.1,7.4-3.1l1.8,1.8c0.3,0.3,0.7,0.3,1.1,0 c0.1-0.1,0.3-0.3,0.3-0.6v-5.1C22.5,14.7,21.9,14,21.1,14z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    本文更新
+                                </div>
+                                <div class="info__detail">
+                                    <button class="icon icon-github info__icon-github">
+                                        <i class="fa-brands fa-github"></i>
+                                    </button>
+                                    2021/09/09
+                                </div>
+                            </li>
+                            <li class="info__item">
+                                <div class="info__item__title">
+                                    <svg x="0px" y="0px" viewBox="0 0 27 27" style="enable-background:new 0 0 27 27" xml:space="preserve" height="15"
+                                        width="15">
+                                        <path fill="currentColor"
+                                            d="M4,1.7v23.4c0,0.6,0.5,0.9,0.9,0.9h19c0.3,0,0.7-0.3,0.7-0.7v-18L24.4,7l-5.2-5.7c-0.2-0.2-0.5-0.3-0.7-0.3H4.8 C4.3,0.9,4,1.3,4,1.7z M6.6,3.7h9.8v4.9c0,0.3,0.2,0.5,0.5,0.5h4.9v14.2H6.6C6.6,23.3,6.6,3.7,6.6,3.7z M19.1,4.3l2.4,2.5h-2.4V4.3 z">
+                                        </path>
+                                    </svg>
+                                    文章量
+                                </div>
+                                <div class="info__detail">約1,200字</div>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="sticky-content sticky-content--sidebar">
+                        <div class="sidebar__content">
+                            <div class="account">
+                                <div class="account__container">
+                                    <div class="account__info">
+                                        <div>
+                                            <img src="images/9965dabc76.jpeg" alt="アカウント画像" class="account__img">
+                                        </div>
+                                        <div class="account__column">
+                                            <h3 class="account__name"><a href="" class="account__link">Zenn公式</a></h3>
+                                            <div class="account__btn__container">
+                                                <button class="btn-follow">フォロー</button>
+                                                <button class="icon icon-github account__icon-github"><i class="fa-brands fa-github"></i></button>
+                                                <button class="icon icon-tweet account__icon-tweet"><i class="fa-brands fa-twitter"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="account__description">
+                                        Zennの使い方や開発状況を発信する公式アカウントです。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="sidebar__content">
+                            <div class="index">
+                                <h3 class="index__title">目次</h3>
+                                <ul class="index__list">
+                                    <li class="index__item">
+                                        <a href="" class="index__link index__item__title">
+                                            Zenn の執筆方法は 2 種類
+                                        </a>
+                                    </li>
+                                    <li class="index__item">
+                                        <a href="" class="index__link">1. Webエディター</a>
+                                    </li>
+                                    <li class="index__item">
+                                        <a href="" class="index__link">2. ローカルのテキストエディター + CLI</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </aside>
+        </div>
+    
+        <section class="posts">
+            <div class="posts__container">
+                <h2 class="section__title">Read next</h2>
+                <ul class="post__list">
+                    <li class="post__item">
+                        <a href="" class="post__thumbnail">
+                            <span class="post__emoji">🗃️</span>
+                        </a>
+                        <div class="post__info">
+                            <div class="post__info__head">
+                                <h3 class="post__title">
+                                    <a href="post__title__link">
+                                        Zenn の下書きデータを LocalStorage から復旧する
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="post__info__foot">
+                                <a href="" class="post__avatar">
+                                    <img src="images/unnamed.jpg" alt="投稿者のアバター画像" class="post__avatar__img">
+                                </a>
+                                <a href="" class="post__username">Hiroyuki Komatsu</a>
+                                <span class="post__date">1日前</span>
+                                <span class="post__like">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span class="post__like__count">2</span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post__item">
+                        <a href="" class="post__thumbnail">
+                            <span class="post__emoji">👻</span>
+                        </a>
+                        <div class="post__info">
+                            <div class="post__info__head">
+                                <h3 class="post__title">
+                                    <a href="post__title__link">
+                                        ZennとGithubを連携する方法
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="post__info__foot">
+                                <a href="" class="post__avatar">
+                                    <img src="images/d0a82ac6c6.png" alt="投稿者のアバター画像" class="post__avatar__img">
+                                </a>
+                                <a href="" class="post__username">eguchi244</a>
+                                <span class="post__date">4日前</span>
+                                <span class="post__like">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span class="post__like__count">2</span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post__item">
+                        <a href="" class="post__thumbnail">
+                            <span class="post__emoji">🔖</span>
+                        </a>
+                        <div class="post__info">
+                            <div class="post__info__head">
+                                <h3 class="post__title">
+                                    <a href="post__title__link">
+                                        Zennとdiff記法について
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="post__info__foot">
+                                <a href="" class="post__avatar">
+                                    <img src="images/409gu4alj3d.jpg" alt="投稿者のアバター画像" class="post__avatar__img">
+                                </a>
+                                <a href="" class="post__username">kkiyama117</a>
+                                <span class="post__date">2021/01/28</span>
+                                <span class="post__like">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span class="post__like__count">53</span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post__item">
+                        <a href="" class="post__thumbnail">
+                            <span class="post__emoji">🐀</span>
+                        </a>
+                        <div class="post__info">
+                            <div class="post__info__head">
+                                <h3 class="post__title">
+                                    <a href="post__title__link">
+                                        GitHub ActionsでZennブログの校正を自動化してみた
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="post__info__foot">
+                                <a href="" class="post__avatar">
+                                    <img src="images/fb4d583c3c.jpeg" alt="投稿者のアバター画像" class="post__avatar__img">
+                                </a>
+                                <a href="" class="post__username">ユータ</a>
+                                <span class="post__date">2021/03/27</span>
+                                <span class="post__like">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span class="post__like__count">76</span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post__item">
+                        <a href="" class="post__thumbnail">
+                            <span class="post__emoji">📚</span>
+                        </a>
+                        <div class="post__info">
+                            <div class="post__info__head">
+                                <h3 class="post__title">
+                                    <a href="post__title__link">
+                                        zenn-cli + reviewdog + textlint + GitHub Actions で執筆体験を最高にする
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="post__info__foot">
+                                <a href="" class="post__avatar">
+                                    <img src="images/7a2cacc0df.jpeg" alt="投稿者のアバター画像" class="post__avatar__img">
+                                </a>
+                                <a href="" class="post__username">serima</a>
+                                <span class="post__date">2020/09/29</span>
+                                <span class="post__like">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span class="post__like__count">158</span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post__item">
+                        <a href="" class="post__thumbnail">
+                            <span class="post__emoji">🌟</span>
+                        </a>
+                        <div class="post__info">
+                            <div class="post__info__head">
+                                <h3 class="post__title">
+                                    <a href="post__title__link">
+                                        Zenn や Qiita や AtCoder のバッジを生成できるサービスを公開しました
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="post__info__foot">
+                                <a href="" class="post__avatar">
+                                    <img src="images/aoigheokg7ae0.jpg" alt="投稿者のアバター画像" class="post__avatar__img">
+                                </a>
+                                <a href="" class="post__username">koki</a>
+                                <span class="post__date">2022/10/01</span>
+                                <span class="post__like">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span class="post__like__count">156</span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post__item">
+                        <a href="" class="post__thumbnail">
+                            <span class="post__emoji">👩‍💻</span>
+                        </a>
+                        <div class="post__info">
+                            <div class="post__info__head">
+                                <h3 class="post__title">
+                                    <a href="post__title__link">
+                                        Next.js製 個人ブログに zenn-markdown-html と zenn-content-css を導入する
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="post__info__foot">
+                                <div class="post__avatar__inner">
+                                    <a href="" class="post__avatar">
+                                        <img src="images/6399678e6b.png" alt="投稿者のアバター画像" class="post__avatar__img post__avatar__img--square">
+                                    </a>
+                                    <a href="" class="post__sub-avatar">
+                                        <img src="images/ab27ada047.png" alt="" class="post__sub-avatar__img">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" class="post__username">waddy_u</a> in <a href="" class="post__username">Zenn Tech Blog</a>
+                                    <div>
+                                        <span class="post__date">2021/05/28</span>
+                                        <span class="post__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                            <span class="post__like__count">154</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post__item">
+                        <a href="" class="post__thumbnail">
+                            <span class="post__emoji">🍜</span>
+                        </a>
+                        <div class="post__info">
+                            <div class="post__info__head">
+                                <h3 class="post__title">
+                                    <a href="post__title__link">
+                                        3分できる即席GitHubプロフィール
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="post__info__foot">
+                                <a href="" class="post__avatar">
+                                    <img src="images/0614c6d47f.jpeg" alt="投稿者のアバター画像" class="post__avatar__img">
+                                </a>
+                                <a href="" class="post__username">t_keshi</a>
+                                <span class="post__date">2022/09/03</span>
+                                <span class="post__like">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span class="post__like__count">236</span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post__item">
+                        <a href="" class="post__thumbnail">
+                            <span class="post__emoji">🧜‍♀️</span>
+                        </a>
+                        <div class="post__info">
+                            <div class="post__info__head">
+                                <h3 class="post__title">
+                                    <a href="post__title__link">
+                                        Zennが mermaid.js によるダイアグラム表記に対応したので試す
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="post__info__foot">
+                                <div class="post__avatar__inner">
+                                    <a href="" class="post__avatar">
+                                        <img src="images/6399678e6b.png" alt="投稿者のアバター画像" class="post__avatar__img post__avatar__img--square">
+                                    </a>
+                                    <a href="" class="post__sub-avatar">
+                                        <img src="images/ab27ada047.png" alt="" class="post__sub-avatar__img">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" class="post__username">waddy_u</a> in <a href="" class="post__username">Zenn Tech Blog</a>
+                                    <div>
+                                        <span class="post__date">2021/06/08</span>
+                                        <span class="post__like">
+                                            <i class="fa-regular fa-heart"></i>
+                                            <span class="post__like__count">63</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="post__item">
+                        <a href="" class="post__thumbnail">
+                            <span class="post__emoji">🍣</span>
+                        </a>
+                        <div class="post__info">
+                            <div class="post__info__head">
+                                <h3 class="post__title">
+                                    <a href="post__title__link">
+                                        ZennのバッジをFastAPI+Vercelでお手軽に作る
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="post__info__foot">
+                                <a href="" class="post__avatar">
+                                    <img src="images/36164a7e66.jpeg" alt="投稿者のアバター画像" class="post__avatar__img">
+                                </a>
+                                <a href="" class="post__username">ganyariya</a>
+                                <span class="post__date">2021/01/13</span>
+                                <span class="post__like">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span class="post__like__count">49</span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo">
+                <a href="" class="footer__logo__link">
+                    <svg x="0px" y="0px" viewBox="0 0 377.4 88.3" style="enable-background:new 0 0 377.4 88.3" xml:space="preserve"
+                        height="22" aria-label="Zenn | エンジニアのための情報共有コミュニティ">
+                        <title>Zenn</title>
+                        <g fill="#111">
+                            <path
+                                d="M233,56.8h-39c0.5,3.5,2.2,6.8,4.8,9.2c2.7,2.3,6.2,3.5,9.8,3.4c2.8,0,5.6-0.5,8.2-1.7c2.5-1.1,4.8-2.8,6.5-5l8.2,9.5 c-2.5,3.4-5.7,6.1-9.5,7.9c-4.6,2.2-9.6,3.3-14.7,3.2c-5.7,0.1-11.4-1.2-16.5-4c-4.5-2.5-8.2-6.3-10.7-10.9s-3.8-9.8-3.7-15.1v-2.2 c-0.1-5.7,1.1-11.3,3.5-16.5c2.2-4.7,5.7-8.6,10.1-11.3c4.7-2.8,10.1-4.2,15.5-4.1c5.2-0.1,10.3,1.1,14.9,3.7 c4.1,2.5,7.4,6.2,9.4,10.5c2.2,5.1,3.3,10.5,3.2,16.1V56.8z M216.1,43.9c0.1-2.9-0.9-5.7-2.8-7.9c-1.8-1.9-4.4-2.9-7.9-2.9 c-2.9-0.1-5.8,1.1-7.7,3.2c-2,2.6-3.3,5.7-3.6,9h22V43.9z">
+                            </path>
+                            <path d="M128.3,67.9h36.1v14.7h-56.9V72l35.8-54.3h-36.2V2.9h56.6v10.4L128.3,67.9z"></path>
+                            <path
+                                d="M248.8,50.7c0-19.1,12.7-29.2,28.2-29.2s27.9,10.1,27.9,29.2V82h-16V51.4c0-10.6-4.8-16.1-12-16.1s-12.4,5.5-12.4,16.1 v30.7h-15.8L248.8,50.7L248.8,50.7z">
+                            </path>
+                            <path
+                                d="M320.3,50.7c0-19.1,12.7-29.2,28.2-29.2s27.9,10.1,27.9,29.2V82h-16V51.4c0-10.6-4.8-16.1-12-16.1S336,40.8,336,51.4v30.7 h-15.8L320.3,50.7L320.3,50.7z">
+                            </path>
+                        </g>
+                        <path fill="#3EA8FF" class="st0"
+                            d="M2.4,83.3h17c0.9,0,1.7-0.5,2.2-1.2L68.4,5.2C69,4.2,68.3,3,67.1,3H51c-0.8,0-1.5,0.4-1.9,1.1L1.6,81.9 C1.3,82.5,1.7,83.3,2.4,83.3z">
+                        </path>
+                        <path fill="#3EA8FF" class="st0"
+                            d="M61,82.1l22.1-35.5c0.7-1.1-0.1-2.5-1.4-2.5H65.7c-0.6,0-1.2,0.3-1.5,0.8L41.5,81.2c-0.6,0.9,0.1,2.1,1.2,2.1 h16.3C59.8,83.3,60.6,82.9,61,82.1z">
+                        </path>
+                    </svg>
+                </a>
+                <p class="footer__logo__text">
+                    エンジニアのための
+                    <br>
+                    情報共有コミュニティ
+                </p>
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__nav__menu">
+                    <li class="footer__nav__title">About</li>
+                    <li class="footer__nav__item">
+                        <a href="" class="footer__nav__link">Zennについて</a>
+                    </li>
+                    <li class="footer__nav__item">
+                        <a href="" class="footer__nav__link">運営会社</a>
+                    </li>
+                    <li class="footer__nav__item">
+                        <a href="" class="footer__nav__link">お知らせ・リリース</a>
+                    </li>
+                </ul>
+                <ul class="footer__nav__menu">
+                    <li class="footer__nav__title">Guides</li>
+                    <li class="footer__nav__item">
+                        <a href="" class="footer__nav__link">使い方</a>
+                    </li>
+                    <li class="footer__nav__item">
+                        <a href="" class="footer__nav__link">Publication</a>
+                    </li>
+                    <li class="footer__nav__item">
+                        <a href="" class="footer__nav__link">よくある質問</a>
+                    </li>
+                </ul>
+                <ul class="footer__nav__menu">
+                    <li class="footer__nav__title">Links</li>
+                    <li class="footer__nav__item">
+                        <a href="" class="footer__nav__link">Twitter</a>
+                    </li>
+                    <li class="footer__nav__item">
+                        <a href="" class="footer__nav__link">Github</a>
+                    </li>
+                    <li class="footer__nav__item">
+                        <a href="" class="footer__nav__link">メディアキット</a>
+                    </li>
+                </ul>
+                <ul class="footer__nav__menu">
+                    <li class="footer__nav__title">Legal</li>
+                    <li class="footer__nav__item">
+                        <a href="" class="footer__nav__link">利用規約</a>
+                    </li>
+                    <li class="footer__nav__item">
+                        <a href="" class="footer__nav__link">プライバシーポリシー</a>
+                    </li>
+                    <li class="footer__nav__item">
+                        <a href="" class="footer__nav__link">特商法表記</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer__copyright">
+            <img class="footer__copyright__img" src="images/classmethod-logo-small.svg" alt="コピーライト画像">
+        </div>
+    </footer>
+</body>
+</html>
