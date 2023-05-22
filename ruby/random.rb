@@ -1,12 +1,8 @@
 def random_group
   group = ['A', 'B', 'C', 'D', 'E', 'F']
 
-  group1 = if [true, false].sample
-             (group - group.sample(3)).sort
-           else
-             (group - group.sample(4)).sort
-           end
-  group2 = (group - group1).sort
+  group1 = group.sample([3, 4].sample).sort
+  group2 = group - group1
 
   p group1
   p group2
