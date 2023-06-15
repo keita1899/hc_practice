@@ -11,11 +11,9 @@ class VendingMachine
   end
 
   def juice_inventory
-    inventory_list = []
-    available_list.each do |juice_name|
-      inventory_list << "#{juice_name} #{@juice_inventory.count { |juice| juice.name == juice_name }}本"
+    available_list.map do |juice_name|
+      "#{juice_name} #{count_juice(juice_name)}本"
     end
-    inventory_list
   end
 
   def earnings
@@ -48,12 +46,7 @@ class VendingMachine
   end
 
   def available_list
-    available_list = []
-    uniq_juices = @juice_inventory.uniq(&:name)
-    uniq_juices.each do |juice|
-      available_list << juice.name
-    end
-    available_list
+    @juice_inventory.uniq(&:name).map(&:name)
   end
 
   def add_juice_inventory(juice_name, price, amount)
