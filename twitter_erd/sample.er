@@ -1,0 +1,101 @@
+[users]
+    *id {label: "bigint, not null"}
+    email {label: "varchar, not null, uniq"}
+    account {label: "varchar, not null, uniq"}
+    tel {label: "varchar, not null, uniq"}
+    name {label: "varchar, not null"}
+    self_introduction {label: "varchar, null"}
+    location {label: "varchar, null"}
+    web {label: "varchar, null"}
+    birthday {label: "date, null"}
+    profile_img {label: "varchar, null"}
+    avatar_img {label: "varchar, null"}
+    created_at {label: "datetime, not null"}
+    updated_at {label: "datetime, not null"}
+
+[tweets]
+    *id {label: "bigint, not null"}
+    user_id {label: "bigint, not null, FK(users)"}
+    content {label: "varchar, not null"}
+    image1 {label: "varchar, null"}
+    image2 {label: "varchar, null"}
+    image3 {label: "varchar, null"}
+    image4 {label: "varchar, null"}
+    reserve_at {label: "datetime, null"}
+    created_at {label: "datetime, not null"}
+    updated_at {label: "datetime, not null"}
+
+[likes]
+    *id {label: "bigint, not null"}
+    user_id {label: "bigint, not null, FK(users)"}
+    tweet_id {label: "bigint, not null, FK(tweets)"}
+    created_at {label: "datetime, not null"}
+    updated_at {label: "datetime, not null"}
+
+[bookmarks]
+    *id {label: "bigint, not null"}
+    user_id {label: "bigint, not null, FK(users)"}
+    tweet_id {label: "bigint, not null, FK(tweets)"}
+    created_at {label: "datetime, not null"}
+    updated_at {label: "datetime, not null"}
+
+[retweets]
+    *id {label: "bigint, not null"}
+    user_id {label: "bigint, not null, FK(users)"}
+    tweet_id {label: "bigint, not null, FK(tweets)"}
+    created_at {label: "datetime, not null"}
+    updated_at {label: "datetime, not null"}
+
+[rooms]
+    *id {label: "bigint, not null"}
+    created_at {label: "datetime, not null"}
+    updated_at {label: "datetime, not null"}
+
+[room_users]
+    *id {label: "bigint, not null"}
+    room_id {label: "bigint, not null, FK(rooms)"}
+    user_id {label: "bigint, not null, FK(users)"}
+    created_at {label: "datetime, not null"}
+    updated_at {label: "datetime, not null"}
+
+[direct_messages]
+    *id {label: "bigint, not null"}
+    room_id {label: "bigint, not null, FK(rooms)"}
+    user_id {label: "bigint, not null, FK(users)"}
+    content {label: "varchar, not null"}
+    created_at {label: "datetime, not null"}
+    updated_at {label: "datetime, not null"}
+
+[follows]
+    *id {label: "bigint, not null"}
+    following_id {label: "bigint, not null, FK(users)"}
+    follower_id {label: "bigint, not null, FK(users)"}
+    created_at {label: "datetime, not null"}
+    updated_at {label: "datetime, not null"}
+
+[notifications]
+    *id {label: "bigint, not null"}
+    user_id {label: "bigint, not null, FK(users)"}
+    type {label: "integer, not null"}
+    url {label: "varchar, not null"}
+    content {label: "varchar, not null"}
+    created_at {label: "datetime, not null"}
+    updated_at {label: "datetime, not null"}
+    is_read {label: "boolean, not null"}
+
+
+users 1--* tweets
+users 1--* likes
+users 1--* retweets
+users 1--* follows
+users 1--* room_users
+users 1--* direct_messages
+users 1--* notifications
+users 1--* bookmarks
+
+tweets 1--* likes
+tweets 1--* retweets
+tweets 1--* bookmarks
+
+rooms 1--* room_users
+rooms 1--* direct_messages
